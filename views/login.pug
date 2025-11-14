@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Login
+  body
+    h1 Вхід
+    form(action="/login", method="POST")
+      input(type="text", name="email", placeholder="Email")
+      input(type="password", name="password", placeholder="Пароль")
+      button(type="submit") Увійти
+
+    h2 Реєстрація
+    form(action="/register", method="POST")
+      input(type="text", name="email", placeholder="Email")
+      input(type="password", name="password", placeholder="Пароль")
+      button(type="submit") Зареєструватися
